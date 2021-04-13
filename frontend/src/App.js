@@ -11,7 +11,7 @@ import { ApolloProvider,gql } from '@apollo/client';
 import Launches from './components/launches/Launches';
 import Launch from './components/launch/Launch';
 const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql",
+  uri: "/graphql",
   cache: new InMemoryCache()
 });
 function App() {
