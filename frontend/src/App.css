@@ -1,3 +1,7 @@
+.app {
+    width: 80vw;
+    margin: auto;
+}
 .app_navbar {
     width: 100%;
     display: flex;

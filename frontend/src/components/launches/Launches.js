@@ -9,7 +9,7 @@ const LAUNCHES_QUERY = gql`
             flight_number
             mission_name
             launch_date_local
-            flight_success
+            launch_success
         }
     }
 `;
@@ -19,7 +19,7 @@ function Launches() {
     if (error) return `Error! ${error}`;
     if (loading) return 'Loading...';
     return (
-        <div>
+        <div style={{width:"80%",margin: "auto"}}>
             <h1 className="display-4 my-3">Launches</h1>
             {data.launches?.map((launch,index) => {
                 return <LaunchItem key={`${launch.flight_number}-${index}`} launch={launch} />
